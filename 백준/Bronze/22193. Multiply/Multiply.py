@@ -1,0 +1,5 @@
+n, m = map(int, input().split())
+a = input().strip()
+b = input().strip()
+p = int(a) * int(b)
+print(p)
