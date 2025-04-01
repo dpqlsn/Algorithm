@@ -11,15 +11,12 @@ int main()
     scanf("%d", &N);
     ll *v = (ll *)malloc(N * sizeof(ll));
 
-    for (int i = 0; i < N; i++)
-    {
-        scanf("%lld", &v[i]);
-    }
+    for (int i = 0; i < N; i++){
+        scanf("%lld", &v[i]); }
 
     scanf("%d", &fileSize);
 
-    for (int i = 0; i < N; i++)
-    {
+    for (int i = 0; i < N; i++){
         cnt += v[i] / fileSize + (v[i] % fileSize != 0);
     }
 
